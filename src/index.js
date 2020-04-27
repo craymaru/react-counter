@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import CounterContext from "./contexts/counter";
-import Counter from "./compornents/counter";
+import Counter from "./components/counter";
 
 class App extends React.Component {
   constructor(props) {
@@ -18,11 +18,11 @@ class App extends React.Component {
   }
 
   increment() {
-    this.setState({ counte: this.state.count + 1 });
+    this.setState({ count: this.state.count + 1 });
   }
 
   decrement() {
-    this.setState({ counte: this.state.count - 1 });
+    this.setState({ count: this.state.count - 1 });
   }
 
   render() {
@@ -34,4 +34,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<React.StrictMode></React.StrictMode>, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
